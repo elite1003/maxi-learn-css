@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+a {
+  text-decoration: none;
+}
+#product-overview {
+  background-image: url("https://images.unsplash.com/photo-1490984792589-bc12fe270585?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 528px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#product-overview h1 {
+  color: rgb(92, 36, 36);
+  font-family: "Anton", sans-serif;
+}
+#plans {
+  padding: 10px;
+}
+#plans h1 {
+  color: #2ddf5c;
+}
+.main-header {
+  background-color: #831616;
+  padding: 8px 16px;
+  width: 100%;
+  vertical-align: middle;
+}
+.main-header > div {
+  display: inline-block;
+}
+.main-header__brand {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 100px);
+  text-align: right;
+}
+.main-nav__items {
+  display: inline-block;
+}
+.main-nav__item {
+  display: inline-block;
+  padding: 5px;
+}
+.main-nav__item a {
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #02fa44;
+  border-bottom: 3px solid white;
+}
+
+.main-nav__item--cta a {
+  background-color: white;
+  color: #720606;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  background-color: #720606;
+  color: white;
+  border-bottom: none;
+}
