@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Montserrat";
+  margin: 0rem;
+  padding: 0rem;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin-top: 75px;
+}
