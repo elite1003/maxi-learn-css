@@ -9,7 +9,9 @@ const openModal = () => {
   backdrop.classList.add("open");
 };
 const closeModal = () => {
-  if (modal) modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
+  }
   backdrop.classList.remove("open");
 };
 for (const planButton of planButtons) {

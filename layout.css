@@ -67,16 +67,22 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   background-color: hsl(0, 71%, 30%);
 }
 .main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+  text-align: justify;
 }
+.main-header > div:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
 .main-header__brand {
   display: inline-block;
   height: 3rem;
+  width: auto;
   font-weight: bold;
   font-size: 1.5rem;
   color: white;
@@ -91,7 +97,7 @@
   border: 2px solid white;
   border-radius: 4px;
   cursor: pointer;
-  margin: 0;
+  margin: 0 1rem;
   padding: 0 0.5rem;
   vertical-align: middle;
 }
@@ -109,8 +115,8 @@
 }
 
 .main-nav {
-  display: inline-block;
-  width: calc(100% - 200px);
+  display: none;
+  width: calc(100% - 150px);
   text-align: right;
   vertical-align: middle;
 }
@@ -215,8 +221,7 @@
   list-style-type: none;
 }
 .main-footer__link {
-  display: inline-block;
-  margin: 0rem 1rem;
+  margin: 1rem 0;
 }
 .main-footer__link a {
   color: black;
@@ -230,4 +235,28 @@
 }
 .open {
   display: block;
+}
+
+@media (min-width: 640px) {
+  .main-header {
+    padding-top: 0;
+  }
+  .main-header > div {
+    display: inline-block;
+    text-align: justify;
+    vertical-align: middle;
+  }
+  .main-header > div:after {
+    display: none;
+  }
+  .main-nav {
+    display: inline-block;
+  }
+  .toggle-button {
+    display: none;
+  }
+  .main-footer__link {
+    display: inline-block;
+    margin: 0rem 1rem;
+  }
 }
